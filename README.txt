@@ -1,34 +1,34 @@
-
-Script Python para obtener listas de direcciones IP a partir de la salida de nmap.
 Autor: Arturo Mata <arturo.mata@gmail.com>
-Script: ping.py
+Script: iplist.py
 Versión: 1.0.0
 Repositorio: https://github.com/matarturo/
 Publicado bajo la Licencia Pública General GNU SIN NINGUNA GARANTÍA.
 Consulte LICENCIA.TXT para obtener más detalles.
 
-# Este script escrito en Python analiza segmentos red para validar los hosts activos
+# Script Python para obtener listas de direcciones IP y puertos a partir de la salida de nmap.
 
 # Requisitos 
 
-Nmap => apto instalar nmap
-Python => apto instalar python3
-Pip Python => pip instalar python-nmap
+Nmap => apt install nmap
+Python => apt install python3
+Pip Python => pip install python-nmap
+Argcomplete => apt-get install -y python-argcomplete
+Argparse => apt-get install python-argparse
 
 # Descarga e instalación del script
 Para ejecutar este script se requiere ingresar al equipo con credenciales de usuario <root>
 
-$ cd / var / log
-$ sudo git clone https://github.com/matarturo/scan_subnet.git
-$ cd scan_subnet
-$ sudo cp ping.py / var / log
-$ cd / var / log
+$ cd/var/log
+$ sudo git clone https://github.com/matarturo/iplist_nmap.git
+$ cd iplist_nmap
+$ sudo cp iplist.py /var/log
+$ cd/var/log
 
 #Para editar el script
-$ sudo nano ping.py  
+$ sudo nano piplist.py  
 
 # Ejecución del script
-$ sudo python3 ping.py 
+$ sudo python3 iplist.py 
 
 #Detener el proceso de busqueda.
 Pulsar simultáneamente las teclas CRTL + C
